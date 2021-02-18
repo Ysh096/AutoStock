@@ -258,7 +258,7 @@ print("예상체결가", exPrice)
 print("예상체결가 대비", exDiff)
 print("예상체결수량", exVol)
 
-slack = Slacker('xoxb-1772908430276-1791234344848-3oDO2HQeiC3ghqTATuIgSSSs')
+slack = Slacker('my_token')
 
 # Send a message to #general channel
 slack.chat.post_message('#stock', '삼성전자 현재가:' + str(offer))
@@ -292,7 +292,7 @@ from datetime import datetime
 from slacker import Slacker
 import time, calendar
 
-slack = Slacker('xoxb-1772908430276-1791234344848-3oDO2HQeiC3ghqTATuIgSSSs')
+slack = Slacker('my_token')
 def dbgout(message):
     """인자로 받은 문자열을 파이썬 셸과 슬랙으로 동시에 출력한다."""
     print(datetime.now().strftime('[%m/%d %H:%M:%S]'), message)
